@@ -1,14 +1,16 @@
 Universidad Mariano Galvez de Guatemala
 Ingenieria en Sistemas
-Analisis de Sistemas II
-Ing. Carlos V. Valenzuela
+Desarrollo Web
+Ing. Ruldin Efrain Ayala Ramos
 
 
-Alumnos 
-Douglas Alexander Samayoa Carrillo
-Cristhofer Jose Rodriguez Rueda 
+Alumno
+Cristhofer José Rodríguez Rueda 
 
 Proyecto Final
 
-link 
-https://drive.google.com/drive/folders/17QOp4evB228dqck2fjiO_IaLwdQ5Qwgq
+link del drive
+https://drive.google.com/drive/folders/1LbqZbnzsT-dAeCQU7QKnsSYLvAQvlf1T
+
+Link de Github
+https://github.com/cristhofer5748/proyectoEasyEat.git
