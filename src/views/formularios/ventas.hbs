@@ -1,0 +1,23 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Fecha</th>
+      <th scope="col">Total de ventas</th>
+      <th scope="col">Total de Productos</th>
+      <th scope="col">Lugar Maquina</th>
+
+    </tr>
+  </thead>
+  <tbody>
+   {{#each ventas}}
+    <tr>
+      <th scope="row">{{fechahora}}</th>
+      <td>{{Total_Ventas}}</td>
+      <td>{{Totalproducto}}</td>
+      <td>{{lugar}}</td>
+     
+    
+    </tr>                 
+    {{/each}}
+  </tbody>
+</table>

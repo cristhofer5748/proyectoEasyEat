@@ -1,0 +1,25 @@
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio Compra</th>
+      <th scope="col">Precio Venta</th>
+      <th scope="col">Total en Stock</th>
+
+    </tr>
+  </thead>
+  <tbody>
+   {{#each productos}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{nombre}}</td>
+      <td>{{preciocompra}}</td>
+      <td>{{precioventa}}</td>
+      <td>{{cantidadTotal}}</td>
+    
+    </tr>                 
+    {{/each}}
+  </tbody>
+</table>

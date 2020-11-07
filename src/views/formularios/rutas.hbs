@@ -1,0 +1,61 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header" style="background-color: white;">
+                    <h3 >Creacion de rutas</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/rutas" method="POST">
+                        <div class="form-group">
+                            <select class="form-control" name="idempleado">
+                                <option value="">Seleccione empleado</option> 
+                                {{#each empleados}}
+                                <option value="{{id}}">{{nombre}}</option> 
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="idmaquina">
+                                <option value="">Seleccione maquina</option> 
+                                {{#each maquinas}}
+                                <option value="{{id}}">{{lugar}}</option> 
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" name="fecharevision" placeholder="Seleccione Fecha">
+                        </div>
+                        <div class="form-group">
+                           <button  class="btn btn-primary btn-block botonguardar">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Empleado Ruta</th>
+      <th scope="col">Lugar Maquina</th>
+      <th scope="col">Longitud</th>
+      <th scope="col">Latitud</th>
+
+    </tr>
+  </thead>
+  <tbody>
+   {{#each rutas}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{nombre}}</td>
+      <td>{{lugar}}</td>
+      <td>{{longitud}}</td>
+      <td>{{latitud}}</td>
+    
+    </tr>                 
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,24 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre Empleado</th>
+      <th scope="col">Id Maquina</th>
+      <th scope="col">Lugar Maquina</th>
+      <th scope="col">Fecha de Visita</th>
+
+    </tr>
+  </thead>
+  <tbody>
+   {{#each visitas}}
+    <tr>
+      <th scope="row">{{idempleado}}</th>
+      <td>{{nombre}}</td>
+      <td>{{id}}</td>
+      <td>{{lugar}}</td>
+      <td>{{fechahora}}</td>
+    
+    </tr>                 
+    {{/each}}
+  </tbody>
+</table>

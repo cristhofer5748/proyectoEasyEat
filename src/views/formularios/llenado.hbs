@@ -1,0 +1,39 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                 <div class="card-header" style="background-color: white;">
+                    <h3 >Llenado de maquina</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/llenado" method="POST">
+                        <div class="form-group">
+                            <select class="form-control" name="idmaquina">
+                                <option value="">Seleccione Maquina</option> 
+                                {{#each maquinas}}
+                                <option value="{{id}}">{{lugar}}</option> 
+                                {{/each}}
+                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="idproducto">
+                                <option value="">Seleccione Producto</option> 
+                                {{#each productos}}
+                                <option value="{{id}}">{{nombre}}</option> 
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="cantidadmaquina" placeholder="Ingrese Cantidad">
+                        </div>
+                        <div class="form-group">
+                            <button  class="btn btn-primary btn-block botonguardar">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

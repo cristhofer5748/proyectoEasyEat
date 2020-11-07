@@ -1,0 +1,56 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+              <div class="card-header" style="background-color: white;">
+                    <h3 >Informe Maquina</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/informe" method="POST">
+                        <div class="form-group">
+                            <input id="empleado" type="number" class="form-control" name="idempleado" placeholder="Id empleado" >
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="idmaquina">
+                                <option value="">Seleccione maquina</option> 
+                                {{#each maquinas}}
+                                <option value="{{id}}">{{lugar}}</option> 
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="datetime-local" class="form-control" name="fechahora" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="idproductomasvendido">
+                                <option value="">Producto Mas Vendido</option> 
+                                {{#each productos}}
+                                <option value="{{id}}">{{nombre}}</option> 
+                                {{/each}}
+                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="idproductomenosvendido">
+                                <option value="">Producto Menos Vendido</option> 
+                                {{#each productos}}
+                                <option value="{{id}}">{{nombre}}</option> 
+                                {{/each}}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="totalventas" placeholder="Ingrese total vendido">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="totalproductos" placeholder="Ingrese total de productos vendidos">
+                        </div>
+                        <div class="form-group">
+                            <button  class="btn btn-primary btn-block botonguardar">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

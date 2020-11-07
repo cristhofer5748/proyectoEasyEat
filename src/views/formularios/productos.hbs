@@ -1,0 +1,29 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Producto mas Vendido</th>
+      <th scope="col">Total de producto</th>
+      <th scope="col">Producto menos Vendido</th>
+      <th scope="col">Total de producto</th>
+       <th scope="col">Lugar Maquina</th>
+        <th scope="col">Total de Unidades</th>
+        <th scope="col">Total de ventas</th>
+
+    </tr>
+  </thead>
+  <tbody>
+   {{#each productos}}
+    <tr>
+      <th scope="row">{{nombre}}</th>
+      <td>{{Mas_Vendido}}</td>
+      <td>{{Menos}}</td>
+      <td>{{Menos_Vendido}}</td>
+      <td>{{lugar}}</td>
+      <td>{{unidadesvendidas}}</td>
+      <td>{{totalventas}}</td>
+     
+    
+    </tr>                 
+    {{/each}}
+  </tbody>
+</table>
